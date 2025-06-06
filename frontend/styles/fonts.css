@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'latoBlack';
+  src: url('../public/fonts/Lato-Black.woff'),
+    url('../public/fonts/Lato-Black.woff2');
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'latoBold';
+  src: url('../public/fonts/Lato-Bold.woff'),
+    url('../public/fonts/Lato-Bold.woff2');
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'latoHairline';
+  src: url('../public/fonts/Lato-Hairline.woff'),
+    url('../public/fonts/Lato-Hairline.woff2');
+  font-display: swap;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'latoLight';
+  src: url('../public/fonts/Lato-Light.woff'),
+    url('../public/fonts/Lato-Light.woff2');
+  font-display: swap;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'latoRegular';
+  src: url('../public/fonts/Lato-Regular.woff'),
+    url('../public/fonts/Lato-Regular.woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'latoThin';
+  src: url('../public/fonts/Lato-Thin.woff2');
+  font-display: swap;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'modernaBlack';
+  src: url('../public/fonts/Moderna-Black.woff'),
+    url('../public/fonts/Moderna-Black.woff2');
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'modernaMedium';
+  src: url('../public/fonts/Moderna-Medium.woff'),
+    url('../public/fonts/Moderna-Medium.woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'modernaCondensedBlack';
+  src: url('../public/fonts/ModernaCondensed-Black.woff'),
+    url('../public/fonts/ModernaCondensed-Black.woff2');
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'modernaCondensedBold';
+  src: url('../public/fonts/ModernaCondensed-Bold.woff'),
+    url('../public/fonts/ModernaCondensed-Bold.woff2');
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'modernaCondensedLight';
+  src: url('../public/fonts/ModernaCondensed-Light.woff'),
+    url('../public/fonts/ModernaCondensed-Light.woff2');
+  font-display: swap;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'modernaCondensedMedium';
+  src: url('../public/fonts/ModernaCondensed-Medium.woff'),
+    url('../public/fonts/ModernaCondensed-Medium.woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ModernaCondensedUnicaseBlack';
+  src: url('../public/fonts/ModernaCondensedUnicase-Black.woff'),
+    url('../public/fonts/ModernaCondensedUnicase-Black.woff2');
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'ModernaCondensedUnicaseBold';
+  src: url('../public/fonts/ModernaCondensedUnicase-Bold.woff'),
+    url('../public/fonts/ModernaCondensedUnicase-Bold.woff2');
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'PiepieRegular';
+  src: url('../public/fonts/Piepie-Regular.woff2');
+  font-display: swap;
+  font-weight: normal;
+}

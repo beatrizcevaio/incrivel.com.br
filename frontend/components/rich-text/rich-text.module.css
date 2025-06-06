@@ -1,0 +1,7 @@
+.iframe iframe {
+  @apply w-full lg:h-[364px] !rounded-xl;
+}
+
+.iframe video {
+  @apply rounded-xl;
+}

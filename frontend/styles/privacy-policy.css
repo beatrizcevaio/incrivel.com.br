@@ -1,0 +1,34 @@
+/* privacy policy page */
+
+.privacy-policy-content h3,
+.privacy-policy-content h4 {
+  @apply text-green;
+}
+
+.privacy-policy-content h3 {
+  @apply text-xl font-modern-condensed-bold font-semibold;
+}
+
+.privacy-policy-content h4 {
+  @apply !text-base font-lato-black;
+}
+
+.privacy-table {
+  @apply flex flex-wrap border-l border-t border-gray-medium;
+}
+
+.privacy-table .table {
+  @apply w-full lg:w-1/2;
+}
+
+.privacy-table .table div {
+  @apply px-4 py-1 border-r border-b border-gray-medium;
+}
+
+.privacy-table .table .thead span {
+  @apply text-base text-green font-lato-black;
+}
+
+.privacy-table .table .tbody {
+  @apply lg:min-h-[70px];
+}

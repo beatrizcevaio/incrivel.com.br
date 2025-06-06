@@ -1,0 +1,4 @@
+header .green-list::after {
+  content: '';
+  @apply hidden lg:block absolute h-full w-screen top-0 -right-[100vw] bg-green;
+}

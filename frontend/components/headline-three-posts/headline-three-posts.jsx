@@ -1,0 +1,72 @@
+import classNames from 'classnames'
+import React from 'react'
+
+import CardPostSmall from '~/components/card-post/card-post-small'
+import CtaGreen from '~/components/cta/cta-green'
+import Grid from '~/components/grid'
+import HeadingTagSelector from '~/components/heading-tag-selector'
+import Image from '~/components/image'
+import { postLinkFormatter } from '~/utils/post-type-link-formatter'
+
+const HeadlineThreePosts = ({
+  hasTitle,
+  title,
+  isUppercase,
+  hasIcon,
+  icon,
+  description,
+  selectedPosts,
+  hasButton,
+  button,
+}) => {
+  if (selectedPosts.length === undefined) return ''
+
+  return (
+    <section className="py-8 lg:pt-10 lg:pb-9">
+      <Grid className="container h-full gap-y-4 lg:gap-y-0">
+        {hasTitle && (
+          <div className="col-span-full flex flex-col items-center space-y-5 lg:mb-10">
+            <div className="relative">
+              {hasIcon && (
+                <Image
+                  className="absolute top-1/2 -translate-y-1/2 left-0 w-[22px] h-[18px]"
+                  {...icon}
+                />
+              )}
+              <HeadingTagSelector
+                className={classNames(
+                  'styled-heading heading-4xl font-modern-condensed-black text-green',
+                  { uppercase: isUppercase, 'pl-7': hasIcon }
+                )}
+                title={title}
+              />
+            </div>
+            <div
+              className="text-base font-lato-regular lg:text-center lg:max-w-[640px] text-gray-dark"
+              dangerouslySetInnerHTML={{
+                __html: description,
+              }}
+            />
+          </div>
+        )}
+        {selectedPosts.map((card, index) => (
+          <CardPostSmall
+            href={`${postLinkFormatter(card.type)}/${card.slug}`}
+            {...card}
+            columns="col-span-full lg:col-span-4"
+            imageHeight="h-20 sm:h-[230px]"
+            key={`card-${index}`}
+            isHalf={true}
+          />
+        ))}
+        {hasButton && (
+          <div className="col-span-full flex justify-center pt-5">
+            <CtaGreen {...button} />
+          </div>
+        )}
+      </Grid>
+    </section>
+  )
+}
+
+export default HeadlineThreePosts

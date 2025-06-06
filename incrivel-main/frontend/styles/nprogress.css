@@ -1,0 +1,12 @@
+#nprogress {
+  --primary-color: #00a887;
+  --secondary-color: #1c6147;
+}
+
+#nprogress .bar {
+  background-color: var(--primary-color) !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px var(--secondary-color), 0 0 5px var(--secondary-color) !important;
+}

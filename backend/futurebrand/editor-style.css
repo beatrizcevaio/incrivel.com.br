@@ -1,0 +1,35 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --danger: #ff4e4e;
+  --success: #409d66;
+}
+
+/* @font-face {
+  font-family: 'tipo_ifood_textosbold';
+  src: url('./styles/fonts/tipoifoodtextos-bold-webfont.woff2') format('woff2'),
+    url('./styles/fonts/tipoifoodtextos-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: 'tipo_ifood_titulosbold'; */
+  font-weight: 700;
+}
+
+p,
+li {
+  /* font-family: 'tipo_ifood_textosregular'; */
+  font-weight: 400;
+}
+
+p a,
+li a {
+  text-decoration: underline;
+}

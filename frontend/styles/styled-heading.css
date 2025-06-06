@@ -1,0 +1,15 @@
+.styled-heading {
+  @apply relative;
+}
+
+.styled-heading::before {
+  content: '';
+  @apply absolute top-1/2 -translate-y-1/2 -left-[60px] lg:-left-[328px];
+  @apply w-9 lg:w-[304px] h-[2px] bg-current;
+}
+
+.styled-heading::after {
+  content: '';
+  @apply absolute top-1/2 -translate-y-1/2 -right-[60px] lg:-right-[328px];
+  @apply w-9 lg:w-[304px] h-[2px] bg-current;
+}

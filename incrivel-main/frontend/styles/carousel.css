@@ -1,0 +1,180 @@
+.carousel {
+  @apply text-0;
+}
+
+/* Highlight Large Content Slider */
+
+.highlight-large-content-slick .slick-track,
+.highlight-large-content-slick .slick-list,
+.highlight-large-content-slick .slick-slide > div {
+  @apply h-full;
+}
+
+.highlight-large-content-slick .slick-dots {
+  @apply !bottom-5;
+}
+
+.highlight-large-content-slick .slick-dots button {
+  @apply !p-0 !w-[10px] !h-[10px] rounded-full;
+  border: solid 2px #00a887 !important;
+}
+
+.highlight-large-content-slick .slick-dots .slick-active button {
+  @apply bg-green;
+}
+
+@screen lg {
+  .highlight-large-content-slick .slick-dots button {
+    @apply !p-0 !w-[10px] !h-[10px] rounded-full;
+    border: solid 2px #fef8f0 !important;
+  }
+
+  .highlight-large-content-slick .slick-dots .slick-active button {
+    @apply bg-beige-light;
+  }
+}
+
+.highlight-large-content-slick .slick-dots button::before {
+  @apply !hidden;
+}
+
+/* highlight-large-institutional-slick */
+
+.highlight-large-institutional-slick .slick-track,
+.highlight-large-institutional-slick .slick-list,
+.highlight-large-institutional-slick .slick-slide > div {
+  @apply h-full;
+}
+
+.highlight-large-institutional-slick .slick-dots {
+  @apply !bottom-5;
+}
+
+.highlight-large-institutional-slick .slick-dots button {
+  @apply !p-0 !w-[10px] !h-[10px] rounded-full;
+  border: solid 2px #05c280 !important;
+}
+
+.highlight-large-institutional-slick .slick-dots .slick-active button {
+  @apply bg-green-light;
+}
+
+.highlight-large-institutional-slick .slick-dots button::before {
+  @apply !hidden;
+}
+
+/* text-content-with-gallery-slick */
+
+.text-content-with-gallery-slick .slick-track,
+.text-content-with-gallery-slick .slick-list,
+.text-content-with-gallery-slick .slick-slide div,
+.text-content-with-gallery-slick .slick-slide figure {
+  @apply h-full;
+}
+
+.text-content-with-gallery-slick .slick-dots {
+  @apply !-bottom-14;
+}
+
+.text-content-with-gallery-slick .slick-dots button {
+  @apply !p-0 !w-[10px] !h-[10px] rounded-full;
+  border: solid 2px #05c280 !important;
+}
+
+.text-content-with-gallery-slick .slick-dots .slick-active button {
+  @apply bg-green-light;
+}
+
+.text-content-with-gallery-slick .slick-dots button::before {
+  @apply !hidden;
+}
+
+.text-content-with-gallery-slick .slick-arrow::before {
+  @apply !hidden;
+}
+
+.text-content-with-gallery-slick .slick-arrow {
+  @apply w-[50px] h-[50px] bg-beige opacity-80 hover:!opacity-100;
+  @apply hover:!bg-beige focus:!bg-beige;
+}
+
+.text-content-with-gallery-slick .slick-prev,
+.text-content-with-gallery-slick .slick-prev:hover,
+.text-content-with-gallery-slick .slick-prev:focus {
+  border-radius: 0px 4px 4px 0px;
+  background-image: url('/images/prev.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 10px 24px;
+  @apply !left-0 z-10;
+}
+
+.text-content-with-gallery-slick .slick-next,
+.text-content-with-gallery-slick .slick-next:hover,
+.text-content-with-gallery-slick .slick-next:focus {
+  background-image: url('/images/next.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 10px 24px;
+  border-radius: 4px 0px 0px 4px;
+  @apply !right-0 z-10;
+}
+
+/* preparing-slick */
+
+.preparing-slick .slick-list {
+  overflow: visible !important;
+}
+
+/* hits-slick */
+
+.hits-slick .slick-track,
+.hits-slick .slick-list,
+.hits-slick .slick-slide div,
+.hits-slick .slick-slide figure {
+  @apply h-full;
+}
+
+.hits-slick .slick-list {
+  overflow: visible !important;
+}
+
+@screen md {
+  .hits-slick .slick-list {
+    overflow: hidden !important;
+  }
+}
+
+.hits-slick .slick-slide:not(:first-child),
+.hits-slick .slick-slide:not(:last-child) {
+  @apply px-2;
+}
+
+.hits-slick .slick-dots {
+  @apply !-bottom-[56px];
+}
+
+.hits-slick .slick-dots button::before {
+  @apply !hidden;
+}
+
+.hits-slick .slick-dots button {
+  @apply !p-0 !w-[10px] !h-[10px] rounded-full;
+  border: solid 2px #05c280 !important;
+}
+
+.hits-slick .slick-dots .slick-active button {
+  @apply bg-green-light;
+}
+
+/* footer-banners-slick */
+
+.footer-banners-slick .slick-track,
+.footer-banners-slick .slick-list,
+.footer-banners-slick .slick-slide > div {
+  @apply !h-full;
+}
+
+.footer-banners-slick .slick-slide.slick-active {
+  @apply !z-10;
+}

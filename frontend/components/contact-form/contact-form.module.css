@@ -1,0 +1,72 @@
+.phone strong,
+.email strong {
+  @apply font-modern-condensed-medium
+}
+
+.input,
+.select,
+.textarea {
+  @apply w-full h-8 bg-white rounded py-1 px-3 outline-none bg-opacity-100 duration-200;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  @apply outline-none bg-opacity-70;
+}
+
+.textarea {
+  @apply h-[116px] resize-none;
+}
+
+.label {
+  @apply font-lato-regular text-xs;
+}
+
+.checkbox {
+  @apply relative;
+}
+
+.checkbox input {
+  @apply absolute top-1/2 -translate-y-1/2 left-0 !w-4 !h-4 opacity-0 z-10;
+}
+
+.checkbox input,
+.checkbox label {
+  @apply cursor-pointer;
+}
+
+.checkbox input:checked~.checkmark:after {
+  @apply block;
+}
+
+.checkbox input.inputError~.checkmark {
+  @apply bg-opacity-10;
+}
+
+.checkbox input:hover~.checkmark {
+  @apply bg-opacity-80;
+}
+
+.checkbox .checkmark {
+  @apply relative !w-4 !h-4 mr-2 rounded bg-white flex-shrink-0 duration-200;
+}
+
+.checkbox .checkmark::after {
+  content: '';
+  @apply absolute hidden;
+}
+
+.checkbox .checkmark:after {
+  @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[5px] h-[10px];
+  @apply rotate-[45deg] border-green-dark duration-200;
+  border-width: 0 1px 1px 0;
+}
+
+.inputError {
+  @apply bg-opacity-40;
+}
+
+.btn[disabled] {
+  @apply cursor-default opacity-50;
+}

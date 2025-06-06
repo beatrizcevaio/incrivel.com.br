@@ -1,0 +1,12 @@
+.inputCase {
+  @apply relative block w-full max-w-[860px] h-14 mx-auto;
+}
+
+.inputCase input {
+  @apply w-full h-full rounded pl-[34px] pr-3;
+  @apply duration-200 outline-none;
+}
+
+.inputCase input:focus {
+  @apply outline-none opacity-80;
+}

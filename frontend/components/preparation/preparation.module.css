@@ -1,0 +1,8 @@
+.ingredients p {
+  @apply relative ml-3;
+}
+
+.ingredients p::before {
+  content: '\2981';
+  @apply absolute -left-3 top-1/2 -translate-y-1/2;
+}

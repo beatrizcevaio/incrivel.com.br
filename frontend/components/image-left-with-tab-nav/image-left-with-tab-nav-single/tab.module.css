@@ -1,0 +1,8 @@
+.steps p {
+  @apply relative ml-6;
+}
+
+.steps p::before {
+  content: '\2981';
+  @apply absolute -left-4 top-0;
+}

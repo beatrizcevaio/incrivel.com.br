@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks.css"],"names":[],"mappings":"AAAA;;EAEE;AACF,oBAAoB;AAEpB;IAAA;AAAmB","file":"blocks.css","sourcesContent":["/**\n * DON'T EDIT THESE TAILWIND IMPORTS!\n */\n/* @tailwind base; */\n@tailwind components;\n@tailwind utilities;\n"]}

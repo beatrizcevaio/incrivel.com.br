@@ -1,0 +1,71 @@
+.label {
+  @apply mb-1 text-xs font-lato-regular;
+}
+
+.input {
+  @apply pl-[34px];
+}
+
+.inputDefault,
+.select {
+  @apply pl-[10px];
+}
+
+.select {
+  @apply !text-gray-medium bg-white;
+}
+
+.input,
+.inputDefault,
+.select {
+  @apply w-full h-8 placeholder:text-gray-medium text-gray-dark;
+  @apply rounded outline-none;
+}
+
+.checkbox {
+  @apply relative;
+}
+
+.checkbox input {
+  @apply absolute top-1/2 -translate-y-1/2 left-0 !w-4 !h-4 opacity-0 z-10;
+}
+
+.checkbox input,
+.checkbox label {
+  @apply cursor-pointer;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  @apply block;
+}
+
+.checkbox input.inputError ~ .checkmark {
+  @apply bg-opacity-10;
+}
+
+.checkbox input:hover ~ .checkmark {
+  @apply bg-opacity-80;
+}
+
+.checkbox .checkmark {
+  @apply relative !w-4 !h-4 mr-2 rounded bg-white flex-shrink-0 duration-200;
+}
+
+.checkbox .checkmark::after {
+  content: '';
+  @apply absolute hidden;
+}
+
+.checkbox .checkmark:after {
+  @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[5px] h-[10px];
+  @apply rotate-[45deg] border-green-dark duration-200;
+  border-width: 0 1px 1px 0;
+}
+
+.inputError {
+  @apply bg-white border-opacity-30 bg-opacity-10;
+}
+
+.btn[disabled] {
+  @apply cursor-default opacity-25;
+}

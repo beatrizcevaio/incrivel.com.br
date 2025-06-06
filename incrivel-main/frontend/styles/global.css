@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './header.css';
+@import './hamburger.css';
+@import './fonts.css';
+@import './nprogress.css';
+@import './carousel.css';
+@import './forms.css';
+@import './overlay.css';
+@import './styled-heading.css';
+@import './privacy-policy.css';
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+@import 'nprogress/nprogress.css';
+
+html,
+body {
+  @apply w-full h-full;
+}
+
+body {
+  @apply antialiased font-lato-regular text-black;
+}
+
+button,
+a {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+strong,
+b {
+  @apply font-bold;
+}
+
+main {
+  @apply pt-[50px] lg:pt-[70px] overflow-x-hidden;
+}
